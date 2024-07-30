@@ -70,7 +70,7 @@ if st.button('Search'):
     if query:
         st.session_state.response = get_response(query)
         st.session_state.query = ''
-        st.experimental_rerun()
+        st.rerun();
     else:
         st.write('Please enter a query.')
 
